@@ -1,0 +1,423 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h2{
+    font-family: Comic Sans MS;
+}
+.container{
+    width: 1160px;
+    position: relative;
+}
+.who,.movie,.ad,.activity,.honor,.footer{
+    margin-top:40px;
+}
+
+.stick a{
+    display:block;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position: fixed;
+    top:650px;
+    right:0;
+    background: rgba(0, 0, 0, 0.63);
+    cursor: pointer;
+}
+.stick a:hover{
+    background-color: cadetblue;
+}
+.stick img{
+    margin-top:20px;
+    margin-left:20px;
+    height:60px;
+    width:60px;
+}
+.stick audio{
+    position: fixed;
+    right:0;
+    top:50px;
+    width:150px;
+}
+
+.header{
+    width: 100%;
+    height:740px;
+    /* overflow: hidden; */
+}
+.header .carousel .images{
+    width: 4640px;
+    height:740px; 
+    font-size: 0;
+}
+.header .carousel .images li{
+    width: 1160px;
+    position: absolute;
+    display: none;
+}
+
+.header .carousel img{
+    width: 1160px;
+    height:740px;
+}
+.header .carousel .item{
+    position: absolute;
+    top:700px;
+    right:500px;
+    z-index: 999;
+}
+.header .carousel .item li{
+    float: left;
+    height:12px;
+    width:12px;
+    background: yellowgreen;
+    border-radius: 50%;
+    margin:10px;
+    cursor: pointer;
+}
+.header .carousel .item li:hover{
+    background: red;
+    transform: scale(1.2);
+}
+
+
+.header .navbar{
+    background:rgba(0,0,0,0.5) ;
+    width: 1160px;
+    height: 190px;
+    position: absolute;
+    top:430px;
+}
+.header .navbar li{
+    float: left;
+    margin:0 40px;
+    margin-top:120px;
+}
+.header .navbar li:first-child{
+    margin-left:200px;
+}
+.header .navbar li a{
+    color: white;
+    font-size: 28px;
+}
+.header .navbar li a:hover{
+    color:black;
+}
+.header h1{
+    position: absolute;
+    color: white;
+    top:450px;
+    width: 100%;
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+
+/*header结束*/
+
+
+.content{
+    width: 100%;
+}
+.content .who{
+    width:1000px;
+    height:740px;
+    font-family: Comic Sans MS;
+}
+.content .who .left{
+    box-sizing: border-box;
+    width: 50%;
+    height:100%;
+    float: left;
+    border: 5px dotted rgba(0,0,0,0.5); 
+}
+.content .who .left h2{
+    font-size: 100px;
+    margin-left: 80px;
+    text-shadow: 10px 10px 10px gray;
+}
+.content .who .left img{
+    margin-top:200px;
+}
+.content .who .right{
+    width:50%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    float: left;
+}
+.content .who .right img{
+    margin-left:200px;
+    margin-top:100px;
+    box-shadow: 10px 10px 10px rgb(53, 52, 52);
+}
+.content .who .middle{
+    width: 450px;
+    height:500px;
+    background: white;
+    position: absolute;
+    top:900px;
+    left: 360px;
+}
+.content .who .middle h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.content .who .middle p{
+    margin:20px;
+    line-height: 55px;
+    font-size: 30px;
+}/*who结束*/
+
+.content .movie{
+    height: 740px;
+    width: 100%;
+    font-family: Arial;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.content .movie h2{
+    font-size: 50px;
+    width: 150px;
+    position: absolute;
+    top:1900px;
+    left:500px;
+    text-align: center;
+    background: cadetblue;
+    
+}
+.content .movie .imgs{
+    width: 1900px;
+}
+.content .movie .imgs li{
+    float: left;
+    width:270px;
+    height:300px;
+    font-size: 0;
+    margin-left:100px;
+}
+.content .movie img{
+    width:270px;
+    height:280px;
+}
+.content .movie img:hover{
+    transform:scale(1.1);
+    border:5px solid #fde6e6f3;
+}
+.content .movie div{
+    width:1160px;
+    height:300px;
+    box-sizing: border-box;
+    position: absolute;
+    top:1980px;
+    border: 10px double cadetblue;
+    display: none;
+}
+.content .movie .block{
+    display: block;
+}
+.content .movie h3{
+    text-align: center;
+}
+.content .movie p{
+    line-height: 45px;
+    margin:0 20px;
+}/*movie结束*/
+
+.content .activity{
+    box-sizing: border-box;
+    width: 100%;
+    height:740px;
+    text-align: center;
+    border: 5px dotted gray;
+}
+.content .activity h2{
+    font-size: 100px;
+    color: white;
+    text-shadow: 5px 0px 5px gray,
+                -5px 0 5px gray,
+                0 5px 5px gray,
+                0 -5px 5px gray;
+}
+.content .activity p{
+    width: 500px;
+    height:50px;
+    font-size: 30px;
+    background: #9e9e9e;
+    color:black;
+    border-radius: 50px;
+    margin-top:-30px;
+    font-weight: 600;
+}/*activity结束*/
+
+.content .ad{
+    width:1000px;
+    height: 740px;
+    background: rgba(0,0,0,0.5);
+}
+@keyframes move{
+    0%{opacity:0;color:rgb(255, 238, 238); }
+    30%{opacity:0.5; color:rgb(253, 194, 194);}
+    50%{opacity:1; color:rgb(253, 156, 156);}
+    70%{opacity:0.5;color:rgb(253, 194, 194);}
+    100%{opacity:0;color:rgb(255, 238, 238);}
+}
+.content .ad h2{
+    text-align: center;
+    line-height: 100px;
+    font-size: 200px;
+    color: white;
+    animation: move 5s ease-in-out infinite 1s alternate;
+    overflow: hidden;
+}
+.content .ad ul li{
+    float: left;
+    font-size: 20px;
+}
+.content .ad ul li a{
+    color: white;
+}
+.content .ad .top{
+    font-size: 0;
+}
+.content .ad .top ul {
+    position: absolute;
+    top:3555px;
+}
+.content .ad .top li{
+    width:300px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    margin-left:50px;
+}
+.content .ad .top img{
+    width:300px;
+    height:360px;
+    margin-left:50px;
+    
+}
+.content .ad img:first-child,
+.content .ad .top li:first-child{
+    margin:0;
+}
+.content .ad .bottom{
+    margin-top:44px;
+    font-size: 0
+}
+.content .ad .bottom ul{
+    position: absolute;
+    top:3810px;
+}
+.content .ad .bottom li{
+    width:434px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    margin-left:44px;
+}
+.content .ad .bottom img{
+    width:434px;
+    height:209px;
+    margin-left:44px;
+}
+.ad  img:hover{
+    box-sizing: border-box;
+    border:5px solid salmon;
+}/*ad结束*/
+
+
+.honor{
+    width:100%;
+    height:740px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 0 0 60px 60px;
+    font-size: 0;
+}
+@keyframes mymove
+{
+from {right:0;text-shadow: 5px 5px 5px rgb(235, 238, 56)}
+to {right:100px;text-shadow: 0px 0px 0px}
+}
+.honor h2{
+    font-size: 100px;
+    position:absolute;
+    top:4200px;
+    right:50px;
+    z-index: 1;
+    color: cadetblue;
+    animation:mymove 6s ease-in infinite alternate-reverse; 
+}
+.honor .tips li{
+    float: left;
+    margin-top:30px;
+    margin-left:80px;
+    font-size: 0;
+}
+.honor>.tips li,
+.honor>.tips li img{
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.honor>.prize{
+    position: absolute;
+    top:4040px;
+    left:2%;
+    z-index: 0;
+    width: 96%;
+    height:570px;
+    background: white;
+    border-radius: 0 0 60px 60px;  
+}
+.honor>.prize>ul{
+    position: absolute;
+    width:100%;
+    height:550px;
+    z-index: 999;
+    display: none;
+}
+.honor .prize li{
+    height: 40px;
+    box-sizing: border-box;
+    margin:20px;
+    background: rgba(143, 141, 141, 0.5);
+    border-radius: 25px;
+    font-size: 30px;
+    padding-left:15px;
+}
+.look{
+    position: relative;
+    z-index: 3;
+    border:8px solid white;
+}
+.honor>div>ul>li:first-child{
+    text-align: center;
+    background: white;
+    color:cadetblue;
+    font-weight: bolder;
+}
+/*honor结束*/
+
+.footer{
+    height: 100px;
+    width:100%;
+    background: rgb(70, 69, 69);
+    margin-bottom:50px;
+    display: table;
+    border-radius: 50px ;
+
+}
+.footer p {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
